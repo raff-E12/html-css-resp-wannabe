@@ -130,7 +130,7 @@ img {
 
  /* MEDIABREAK PER DISPOSIIVI MOBILE*/
 
- @media screen and (min-width:375px){
+ @media screen and (min-width:475px){
 
    .site-header{
     align-items: center;
@@ -141,15 +141,47 @@ img {
     padding: 40px;
    }
 
+   .card{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
    .site-header .text-center, h2, h3, h4, h5, h6{
        margin: 0;
    }
 
+   img {
+    max-width: 200px;
+   }
+
    .container{
     width: 100%;
-    padding: 40px;
     gap: 40px;
     flex-direction: column;
+   }
+
+   .steps .card{
+    width: 100%;
+    padding: 0;
+   }
+
+   .container .col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+
+   .text{
+    width: 220px;
+   }
+
+   .col{
+    width: 200%;
    }
 
    .container .row{
@@ -157,21 +189,115 @@ img {
     justify-content: center;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
     padding: 20px;
    }
+
+   .why-us .col-right{
+    text-align: center;
+    width: 80%;
+   }
+
  }
 
-  /* MEDIABREAK PER DISPOSIIVI GRANDI*/
+  /* MEDIABREAK PER TABLET*/
 
- @media (min-width:1006px) {
+ @media screen and (min-width:982px) {
     
     .container{
      flex-direction: column;
      width: 100%;
+     gap: 40px;
     }
  
     .container .row{
      flex-direction: row;
     }
- 
+
+    .steps .text{
+        width: 190px;
+    }
+
+    img {
+        max-width: 170px;
+        padding: 10px;
+     }
+
+     .why-us .row .col.col-left{
+       align-self: first baseline;
+        display: flex;
+     }
+
+    .col.col-left img{
+        max-width: 300px;
+    }
+
+    .col.col-right ul{
+        width: 400px;
+    }
+    
+    .lessons .text{
+        width: 200px;
+    }
+
+    .why-us .col-right{
+        text-align: left;
+        width: 380px;
+       }
+
+    .why-us .row .text{
+        width: 300px;
+    }
+
+    .col.col-right{
+        width: 34%;
+    }
+  }
+
+   /* MEDIABREAK PER DESKTOP*/
+
+  @media screen and (min-width:1222px) {
+    
+    .why-us .row .text{
+        width: 80%;
+    }
+
+    .lessons .text{
+        width: 260%;
+    }
+
+    .steps .text{
+        width: 70%;
+    }
+
+    .col.col-right ul{
+        width: 70%;
+    }
+    
+    .container .row{
+        gap: 10px;
+    }
+
+    .row .col{
+        width: 80%;
+        padding: 10px;
+    }
+
+    .col.col-right ul{
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    img{
+        max-width: 300px;
+    }
+
+    .col.col-left img{
+        max-width: 400px;
+    }
+
+    .card{
+        width: 20%;
+    }
   }
